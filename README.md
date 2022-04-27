@@ -1,6 +1,6 @@
 # flutter_layout
 
-A new Flutter project.
+A new Flutter project. This project is for learning and practicing layouts
 
 ## Getting Started
 
