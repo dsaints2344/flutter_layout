@@ -15,10 +15,14 @@ class MyApp extends StatelessWidget {
             margin: const EdgeInsets.all(100.0),
             height: 100.0,
             width: 100.0,
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
                 color: Colors.orange,
+                gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [Colors.purple.shade50, Colors.purple.shade500]),
                 shape: BoxShape.rectangle,
-                borderRadius: BorderRadius.all(Radius.circular(10.0))),
+                borderRadius: const BorderRadius.all(Radius.circular(10.0))),
           ),
         ));
   }
