@@ -15,13 +15,11 @@ class MyApp extends StatelessWidget {
             margin: const EdgeInsets.all(100.0),
             height: 100.0,
             width: 100.0,
+            child: FlutterLogo(),
             decoration: BoxDecoration(
                 color: Colors.orange,
                 gradient: LinearGradient(
-                    begin: Alignment(0.0, -1.0),
-                    end: Alignment(0.0, 1.0),
-                    tileMode: TileMode.repeated,
-                    colors: [Colors.purple.shade50, Colors.purple.shade500]),
+                    colors: [Colors.pink.shade50, Colors.pink.shade500]),
                 shape: BoxShape.rectangle,
                 borderRadius: const BorderRadius.all(Radius.circular(10.0))),
           ),
