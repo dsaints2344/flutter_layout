@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -8,27 +8,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData(
-            brightness: Brightness.dark,
-            primaryColor: Colors.purple,
-            accentColor: Colors.orange,
-            textTheme: const TextTheme(
-                bodyText2:
-                    TextStyle(fontSize: 24, fontStyle: FontStyle.italic))),
+        title: 'Container app',
         home: Scaffold(
-          appBar: AppBar(title: const Text('Building Layouts with Flutter')),
-          body: const Center(
-            child: Text('Hello Flutter Layouts'),
+          appBar: AppBar(title: const Text('Container')),
+          body: Container(
+            margin: const EdgeInsets.all(100.0),
+            height: 100.0,
+            width: 100.0,
+            decoration: const BoxDecoration(
+              color: Colors.orange,
+              shape: BoxShape.circle,
+            ),
           ),
-          floatingActionButton: FloatingActionButton(
-            onPressed: (() => print('You rang?')),
-            child: const Icon(Icons.lightbulb_outline),
-          ),
-          persistentFooterButtons: <Widget>[
-            IconButton(onPressed: () {}, icon: const Icon(Icons.add_comment)),
-            IconButton(onPressed: () {}, icon: const Icon(Icons.add_alarm)),
-            IconButton(onPressed: () {}, icon: const Icon(Icons.add_location))
-          ],
         ));
   }
 }
