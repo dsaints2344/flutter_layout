@@ -15,13 +15,12 @@ class MyApp extends StatelessWidget {
             margin: const EdgeInsets.all(100.0),
             height: 100.0,
             width: 100.0,
-            child: FlutterLogo(),
             decoration: BoxDecoration(
-                color: Colors.orange,
-                gradient: LinearGradient(
-                    colors: [Colors.pink.shade50, Colors.pink.shade500]),
-                shape: BoxShape.rectangle,
-                borderRadius: const BorderRadius.all(Radius.circular(10.0))),
+              color: Colors.orange,
+              image: DecorationImage(
+                  image: NetworkImage('http://bit.ly/flutter_tiger'),
+                  fit: BoxFit.cover),
+            ),
           ),
         ));
   }
