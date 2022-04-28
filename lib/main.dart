@@ -18,8 +18,9 @@ class MyApp extends StatelessWidget {
             decoration: BoxDecoration(
                 color: Colors.orange,
                 gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
+                    begin: Alignment(0.0, -1.0),
+                    end: Alignment(0.0, 1.0),
+                    tileMode: TileMode.repeated,
                     colors: [Colors.purple.shade50, Colors.purple.shade500]),
                 shape: BoxShape.rectangle,
                 borderRadius: const BorderRadius.all(Radius.circular(10.0))),
